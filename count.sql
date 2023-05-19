@@ -1,0 +1,1 @@
+select sum("Boyd_Yards") as "Boyd Yards",  sum("Higgins_Yards") as "Higgins Yards", sum("Chase_Yards") as "Chase Yards", sum(case "Result" when 'Win' then 1 else 0 end) || '-' || sum(case "Result" when 'Loss' then 1 else 0 end) as "Win/Loss" from jason_aydar ja   
